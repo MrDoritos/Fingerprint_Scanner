@@ -1,0 +1,7 @@
+C:\Users\Ian\source\repos\FingerprintScanner HTTP 1st Attempt at XML n HTML\FingerprintScanner HTTP 1st Attempt at XML n HTML\bin\Release\FingerPrintScannerBackend.exe.config
+C:\Users\Ian\source\repos\FingerprintScanner HTTP 1st Attempt at XML n HTML\FingerprintScanner HTTP 1st Attempt at XML n HTML\bin\Release\FingerPrintScannerBackend.exe
+C:\Users\Ian\source\repos\FingerprintScanner HTTP 1st Attempt at XML n HTML\FingerprintScanner HTTP 1st Attempt at XML n HTML\bin\Release\FingerPrintScannerBackend.pdb
+C:\Users\Ian\source\repos\FingerprintScanner HTTP 1st Attempt at XML n HTML\FingerprintScanner HTTP 1st Attempt at XML n HTML\obj\Release\FingerPrintScannerBackend.csprojAssemblyReference.cache
+C:\Users\Ian\source\repos\FingerprintScanner HTTP 1st Attempt at XML n HTML\FingerprintScanner HTTP 1st Attempt at XML n HTML\obj\Release\FingerPrintScannerBackend.csproj.CoreCompileInputs.cache
+C:\Users\Ian\source\repos\FingerprintScanner HTTP 1st Attempt at XML n HTML\FingerprintScanner HTTP 1st Attempt at XML n HTML\obj\Release\FingerPrintScannerBackend.exe
+C:\Users\Ian\source\repos\FingerprintScanner HTTP 1st Attempt at XML n HTML\FingerprintScanner HTTP 1st Attempt at XML n HTML\obj\Release\FingerPrintScannerBackend.pdb

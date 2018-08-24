@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>
+Create a user
+</title>
+</head>
+<body>
+<script>
+function onCheck(){
+if (document.getElementById('idbox').checked){
+document.getElementById('idbox').innerHTML = "<input id=\"id\">"
+} else{
+document.getElementById('idbox').innerHTML = ""
+}
+}
+</script>
+
+<p>Success</p>
+<div>
+<form action="/NEWUSER" method="post">
+Create a scan
+<input id="idbox" name="a" type="checkbox" onclick="onCheck()" checked>
+Template Id
+<input id="id" name="b" type="number" value="1">
+Username
+<input id="name" name="c" type="text">
+<output for="a b c"></output>
+<input type="submit">
+</form>
+</div>
+
+
+
+
+
+</body>
+</html>

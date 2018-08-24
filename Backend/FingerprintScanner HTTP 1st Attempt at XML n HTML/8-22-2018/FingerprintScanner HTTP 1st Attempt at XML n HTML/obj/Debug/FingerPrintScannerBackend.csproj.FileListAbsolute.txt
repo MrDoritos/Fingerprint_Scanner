@@ -1,0 +1,10 @@
+C:\Users\Ian\source\repos\FingerprintScanner HTTP 1st Attempt at XML n HTML\FingerprintScanner HTTP 1st Attempt at XML n HTML\obj\Debug\FingerPrintScannerBackend.csproj.CoreCompileInputs.cache
+C:\Users\Ian\source\repos\FingerprintScanner HTTP 1st Attempt at XML n HTML\FingerprintScanner HTTP 1st Attempt at XML n HTML\bin\Debug\FingerPrintScannerBackend.exe.config
+C:\Users\Ian\source\repos\FingerprintScanner HTTP 1st Attempt at XML n HTML\FingerprintScanner HTTP 1st Attempt at XML n HTML\bin\Debug\FingerPrintScannerBackend.exe
+C:\Users\Ian\source\repos\FingerprintScanner HTTP 1st Attempt at XML n HTML\FingerprintScanner HTTP 1st Attempt at XML n HTML\bin\Debug\FingerPrintScannerBackend.pdb
+C:\Users\Ian\source\repos\FingerprintScanner HTTP 1st Attempt at XML n HTML\FingerprintScanner HTTP 1st Attempt at XML n HTML\obj\Debug\FingerPrintScannerBackend.exe
+C:\Users\Ian\source\repos\FingerprintScanner HTTP 1st Attempt at XML n HTML\FingerprintScanner HTTP 1st Attempt at XML n HTML\obj\Debug\FingerPrintScannerBackend.pdb
+C:\Users\Ian\source\repos\FingerprintScanner HTTP 1st Attempt at XML n HTML\FingerprintScanner HTTP 1st Attempt at XML n HTML\obj\Debug\FingerPrintScannerBackend.csprojResolveAssemblyReference.cache
+C:\Users\Ian\source\repos\FingerprintScanner HTTP 1st Attempt at XML n HTML\FingerprintScanner HTTP 1st Attempt at XML n HTML\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ian\source\repos\FingerprintScanner HTTP 1st Attempt at XML n HTML\FingerprintScanner HTTP 1st Attempt at XML n HTML\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Ian\source\repos\FingerprintScanner HTTP 1st Attempt at XML n HTML\FingerprintScanner HTTP 1st Attempt at XML n HTML\obj\Debug\FingerPrintScannerBackend.csproj.CopyComplete
