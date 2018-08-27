@@ -165,11 +165,14 @@ namespace FingerprintScanner
                 case "PACKREC":
                 case "ERROR":
                     //Log.Warning("Arduino errored");
+                    Form1.AppendTextBox("Arduino errored\n");
                     return 1;
                 case "FLASHERR":
+                    Form1.AppendTextBox("Flash error\n");
                     //Log.Warning("Flash error");
                     return 1;
                 case "BADLOC":
+                    Form1.AppendTextBox("Bad location\n");
                     //Log.Warning("Bad location");
                     return 1;
             }
@@ -218,18 +221,22 @@ namespace FingerprintScanner
                         boolBreak = true;
                         break;
                     case "SCANNER_IMAGEMESS":
+                        Form1.AppendTextBox("Imaged finger was too messy, try again\n");
                         //Log.Info("Imaged finger was too messy, try again");
                         return 0;
                     case "SCANNER_IMAGEFAIL":
+                        Form1.AppendTextBox("Could not find fingerprint features, try again\n");
                         //Log.Info("Could not find fingerprint features, try again");
                         return 0;
                     case "SCANNER_ERROR":
+                        Form1.AppendTextBox("Scanner errored during scan\n");
                         //Log.Info("Scanner errored.");
                         return 0;
                 }
             }
             //Log.Success("Image converted successfully");
             //Log.Info("Now remove finger");
+            Form1.AppendTextBox("Remove finger from scanner\n");
             Task.Delay(3000).GetAwaiter();
             int id = 0;
             try
@@ -243,6 +250,7 @@ namespace FingerprintScanner
             }
 
             //Log.Info("Place same finger again");
+            Form1.AppendTextBox("Place same finger again\n");
             boolBreak = false;
             while (!boolBreak)
             {
@@ -271,13 +279,16 @@ namespace FingerprintScanner
                         boolBreak = true;
                         break;
                     case "SCANNER_IMAGEMESS":
+                        Form1.AppendTextBox("Imaged finger was too messy, try again\n");
                         //Log.Info("Imaged finger was too messy, try again");
                         return 0;
                     case "SCANNER_IMAGEFAIL":
                         //Log.Info("Could not find fingerprint features, try again");
+                        Form1.AppendTextBox("Could not find fingerprint features, try again\n");
                         return 0;
                     case "SCANNER_ERROR":
                         //Log.Info("Scanner errored.");
+                        Form1.AppendTextBox("Scanner errored, try again\n");
                         return 0;
                 }
             }
@@ -290,12 +301,15 @@ namespace FingerprintScanner
                 {
                     case "MATCH":
                         boolBreak = true;
+                        Form1.AppendTextBox("Success!\n");
                         //Log.Success("Fingers matched!");
                         break;
                     case "ERROR":
+                        Form1.AppendTextBox("Scanner errored, try again\n");
                         //Log.Info("Scanner errored.");
                         return 0;
                     case "NOMATCH":
+                        Form1.AppendTextBox("Fingers did not match, try again\n");
                         //Log.Info("Fingers did not match.");
                         return 0;
                 }
@@ -312,12 +326,15 @@ namespace FingerprintScanner
                         return id;
                     case "ERROR":
                         //Log.Info("Scanner errored.");
+                        Form1.AppendTextBox("Scanner errored, try again\n");
                         return 0;
                     case "BADLOC":
                         //Log.Info("Bad scan location, try again");
+                        Form1.AppendTextBox("Bad scan location, try again\n");
                         return 0;
                     case "FLASHERR":
                         //Log.Info("Error writing to flash, try again");
+                        Form1.AppendTextBox("Error, scanner could not write template to flash\n");
                         return 0;
                 }
             }

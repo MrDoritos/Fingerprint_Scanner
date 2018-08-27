@@ -15,7 +15,7 @@ namespace FingerprintScanner
         Accounts Accounts;
         string filename;
         public bool Autosave = false;
-        public TimeSpan autosaveTime = new TimeSpan(0,1,0);
+        public TimeSpan autosaveTime = new TimeSpan(0,15,0);
         private DateTime timeLastSaved = DateTime.Now;
 
 
@@ -33,6 +33,7 @@ namespace FingerprintScanner
                 {
                     timeLastSaved = DateTime.Now;
                     Save(filename, Accounts);
+                    Form1.AppendTextBox("Autosaved Database");
                 }
                 await Task.Delay(60000);
             }
