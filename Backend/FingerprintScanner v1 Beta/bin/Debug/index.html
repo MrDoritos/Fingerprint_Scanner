@@ -1,0 +1,188 @@
+﻿<!-- 
+This was painfully written by hand.. at least .NET has intellisense
+-->
+<html>
+<head>
+<title>Ian's test site</title>
+</head>
+<body onLoad="loadXML()">
+<!--<script src="displayusers.js"></script>-->
+<script>
+function loadXML(){
+var request = new XMLHttpRequest();
+request.open("GET", "/DATABASE.XML", false);
+request.send();
+var xml = request.responseXML;
+var fingers = xml.getElementsByTagName("finger");
+for (var i = 0; i < fingers.length && i < 10; i++){
+    var finger = fingers[i];
+    var name = (finger.getElementsByTagName("Name")[0]).childNodes[0].nodeValue;
+    var logstate = (finger.getElementsByTagName("LogState")[0]).childNodes[0].nodeValue;
+    var currentTime = (finger.getElementsByTagName("CurrentTime")[0]).childNodes[0].nodeValue;
+    var totalTime = (finger.getElementsByTagName("TotalTime")[0]).childNodes[0].nodeValue;
+    
+    (document.getElementById((i + 1).toString()).getElementsByClassName("name")[0]).innerText = name;
+    (document.getElementById((i + 1).toString()).getElementsByClassName("signedin")[0]).innerText = logstate;
+    (document.getElementById((i + 1).toString()).getElementsByClassName("currenttime")[0]).innerText = currentTime;
+    (document.getElementById((i + 1).toString()).getElementsByClassName("totaltime")[0]).innerText = totalTime;
+}    
+for (var i = 10; i < fingers.length; i++){
+
+    var finger = fingers[i];
+    var name = (finger.getElementsByTagName("Name")[0]).childNodes[0].nodeValue;
+    var logstate = (finger.getElementsByTagName("LogState")[0]).childNodes[0].nodeValue;
+    var currentTime = (finger.getElementsByTagName("CurrentTime")[0]).childNodes[0].nodeValue;
+    var totalTime = (finger.getElementsByTagName("TotalTime")[0]).childNodes[0].nodeValue;
+   
+    (document.getElementById('table')).lastChild.lastChild.appendChild(document.createElement('tr'));
+    (document.getElementById('table')).lastChild.lastChild.lastChild.innerHTML = (document.getElementById((1).toString()).innerHTML);
+    (document.getElementById('table')).lastChild.lastChild.lastChild.id = (i + 1).toString();
+    (document.getElementById((i + 1).toString()).getElementsByClassName("name")[0]).innerText = name;
+    (document.getElementById((i + 1).toString()).getElementsByClassName("signedin")[0]).innerText = logstate;
+    (document.getElementById((i + 1).toString()).getElementsByClassName("currenttime")[0]).innerText = currentTime;
+    (document.getElementById((i + 1).toString()).getElementsByClassName("totaltime")[0]).innerText = totalTime;
+
+}
+}
+</script>
+<link rel="stylesheet" href="index.css" type="text/css"/>
+<div id="header"></div>
+
+<div id="content">
+<div id="contentcenter">
+<div id="tablecontainer">
+<table id="table" cellspacing="0" cellpadding="0" border="0">
+<thead>
+<tr id="thead"><th class="tt">Name</th><th class="tt">Signed In</th><th class="tt">Current Time</th><th class="tt">Total Time</th></tr>
+</thead>
+<tbody>
+<tr id="1" class="tcontent">
+
+<td class="name"></td>
+<td class="signedin"></td>
+<td class="currenttime"></td>
+<td class="totaltime"></td>
+
+</tr>
+<tr id="2" class="tcontent">
+
+<td class="name"/>
+<td class="signedin"/>
+<td class="currenttime"/>
+<td class="totaltime"/>
+
+</tr>
+<tr id="3" class="tcontent">
+
+
+<td class="name"/>
+<td class="signedin"/>
+<td class="currenttime"/>
+<td class="totaltime"/>
+
+</tr>
+<tr id="4" class="tcontent">
+
+
+<td class="name"/>
+<td class="signedin"/>
+<td class="currenttime"/>
+<td class="totaltime"/>
+
+</tr>
+<tr id="5" class="tcontent">
+
+
+<td class="name"/>
+<td class="signedin"/>
+<td class="currenttime"/>
+<td class="totaltime"/>
+
+</tr>
+<tr id="6" class="tcontent">
+
+
+<td class="name"/>
+<td class="signedin"/>
+<td class="currenttime"/>
+<td class="totaltime"/>
+
+</tr>
+<tr id="7" class="tcontent">
+
+
+<td class="name"/>
+<td class="signedin"/>
+<td class="currenttime"/>
+<td class="totaltime"/>
+
+</tr>
+<tr id="8" class="tcontent">
+
+
+<td class="name"/>
+<td class="signedin"/>
+<td class="currenttime"/>
+<td class="totaltime"/>
+
+</tr>
+<tr id="9" class="tcontent">
+
+
+<td class="name"/>
+<td class="signedin"/>
+<td class="currenttime"/>
+<td class="totaltime"/>
+
+</tr>
+<tr id="10" class="tcontent">
+
+
+<td class="name"/>
+<td class="signedin"/>
+<td class="currenttime"/>
+<td class="totaltime"/>
+
+</tr>
+
+
+<td class="name"/>
+<td class="signedin"/>
+<td class="currenttime"/>
+<td class="totaltime"/>
+
+</tr>
+</tbody>
+</table>
+</div>
+<!--
+<div id="buttons">
+
+<div class="first" id="button">
+<p>First</p>
+</div>
+<div class="back" id="button">
+<p>Back</p>
+</div>
+<div class="forward" id="button">
+<p>Forward</p>
+</div>
+<div class="last" id="button">
+<p>Last</p>
+</div>
+</div>
+-->
+<div>
+<button onclick="window.location.href='/newuser.html'">Create a user</button>
+</div>
+
+</div>
+</div>
+
+<div id="footer">
+<p>2030 © <a href="http://iansweb.org">iansweb.org</a></p>
+</div>
+
+
+</body>
+</html>

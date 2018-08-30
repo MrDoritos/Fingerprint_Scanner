@@ -1,12 +1,13 @@
 #include <SoftwareSerial.h>
 #include <Adafruit_Fingerprint.h>
-SoftwareSerial scannerSerial(2, 3);
+SoftwareSerial scannerSerial(5, 6);
 
 Adafruit_Fingerprint finger = Adafruit_Fingerprint(&scannerSerial);
 
 uint8_t id;
 
 void setup() {
+  pinMode(12, INPUT_PULLUP);
   Serial.begin(57600);
   while(!Serial);
   delay(100);
@@ -53,6 +54,16 @@ void loop() {
       clearBuffer();
       Serial.println("OK");
       deleteWizard();
+      break;
+      case 0x06:
+  if (digitalRead(12) < 1){
+    Serial.println("SCANNER_START_READ");
+    clearBuffer();
+    getFingerprintIDez();
+    Serial.println("END");
+    } else{
+      Serial.println("NO");
+      }
       break;
       }
   }
@@ -253,6 +264,7 @@ void fingerWizard() {
   }
 
 uint8_t getFingerprintID() {
+  Serial.println("SCANNER_START_READ");
   uint8_t p = finger.getImage();
   switch (p) {
     case FINGERPRINT_OK:

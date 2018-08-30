@@ -1,0 +1,13 @@
+c:\users\ian\source\repos\FingerprintScanner\FingerprintScanner\bin\Debug\FingerprintScanner.exe.config
+c:\users\ian\source\repos\FingerprintScanner\FingerprintScanner\bin\Debug\FingerprintScanner.exe
+c:\users\ian\source\repos\FingerprintScanner\FingerprintScanner\bin\Debug\FingerprintScanner.pdb
+c:\users\ian\source\repos\FingerprintScanner\FingerprintScanner\obj\Debug\FingerprintScanner.csprojResolveAssemblyReference.cache
+c:\users\ian\source\repos\FingerprintScanner\FingerprintScanner\obj\Debug\FingerprintScanner.Form1.resources
+c:\users\ian\source\repos\FingerprintScanner\FingerprintScanner\obj\Debug\FingerprintScanner.Properties.Resources.resources
+c:\users\ian\source\repos\FingerprintScanner\FingerprintScanner\obj\Debug\FingerprintScanner.csproj.GenerateResource.cache
+c:\users\ian\source\repos\FingerprintScanner\FingerprintScanner\obj\Debug\FingerprintScanner.csproj.CoreCompileInputs.cache
+c:\users\ian\source\repos\FingerprintScanner\FingerprintScanner\obj\Debug\FingerprintScanner.exe
+c:\users\ian\source\repos\FingerprintScanner\FingerprintScanner\obj\Debug\FingerprintScanner.pdb
+c:\users\ian\source\repos\FingerprintScanner\FingerprintScanner\bin\Debug\Newtonsoft.Json.dll
+c:\users\ian\source\repos\FingerprintScanner\FingerprintScanner\bin\Debug\Newtonsoft.Json.xml
+c:\users\ian\source\repos\FingerprintScanner\FingerprintScanner\obj\Debug\FingerprintScanner.csproj.CopyComplete
